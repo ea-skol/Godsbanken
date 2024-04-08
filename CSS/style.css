@@ -1,14 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(231, 238, 245);
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: lightblue;
   font-family: "Ubuntu", sans-serif;
+  /* border-radius: 7px; */
   font-weight: 600;
   font-size: large;
+  position: sticky;
+  top: 0;
+  height: 70px;
 }
+
+/* #white-space {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: 10px;
+} */
 
 .header-section {
   display: flex;
@@ -81,23 +106,80 @@ nav {
 }
 
 #hero {
-  background-image: url(../images/logo.png);
-  background-repeat: no-repeat;
+  background-image: url(../images/hero2.png);
+  /* width: 98%; */
+  margin: 10px auto;
+  /* background-repeat: no-repeat; */
   background-position: center;
   height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  color: white;
+  text-shadow: 0px 0px 10px black, 0px 0px 10px black;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  margin-top: 50px;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
 }
 
 section {
-  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   font-size: large;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* border: 3px solid black; */
+  margin-top: 50px;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+  /* width: 100%; */
+  background-color: white;
+  height: 350px;
+}
+
+.section-gray {
+  background-color: lightblue;
+}
+
+h2 {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.section-content {
+  margin-top: 40px;
   display: flex;
-  justify-content: space-between;
-  border: 3px solid black;
+  justify-content: space-evenly;
+  /* border: 3px solid black; */
 }
 
 section p {
   width: 50%;
   text-wrap: pretty;
-  border: 3px solid gray;
+  /* border: 3px solid gray; */
+  display: flex;
+  align-items: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.left-align {
+  text-align: left;
+}
+
+section img {
+  height: 150px;
+  border-radius: 10px;
 }
