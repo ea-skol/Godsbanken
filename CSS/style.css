@@ -12,6 +12,7 @@ html {
 body {
   background-color: rgb(231, 238, 245);
   overflow-x: hidden;
+  font-family: "Ubuntu", sans-serif;
 }
 
 header {
@@ -19,7 +20,6 @@ header {
   align-items: center;
   justify-content: center;
   background-color: lightblue;
-  font-family: "Ubuntu", sans-serif;
   /* border-radius: 7px; */
   font-weight: 600;
   font-size: large;
@@ -92,12 +92,17 @@ nav {
   border-bottom: 3px solid #00000000;
 }
 
+.header-link.clicked {
+  background-color: #03074b29;
+  border-bottom: 3px solid #00000000;
+}
+
 #selected {
   /* background-color: rgb(117, 117, 117); */
   border-bottom: 3px solid black;
 }
 
-#log-in {
+#log-in-button {
   width: 70px;
   /* border: 3px solid black; */
   margin-left: auto;
@@ -110,8 +115,12 @@ nav {
   border-radius: 7px;
 }
 
-#log-in:hover {
-  background-color: rgb(166, 52, 52);
+#log-in-button:hover {
+  background-color: rgb(171, 57, 57);
+}
+
+#log-in-button.clicked {
+  background-color: rgb(161, 47, 47);
 }
 
 #hero {
@@ -127,14 +136,12 @@ nav {
   font-size: 70px;
   color: white;
   text-shadow: 0px 0px 10px black, 0px 0px 10px black;
-  font-family: "Ubuntu", sans-serif;
   text-align: center;
 }
 
 main {
   margin-top: 50px;
   width: 100%;
-  font-family: "Ubuntu", sans-serif;
 }
 
 h1 {
@@ -188,6 +195,33 @@ section p {
 section img {
   height: 150px;
   border-radius: 10px;
+}
+
+#log-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(231, 238, 245);
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 400px;
+  margin-top: 100px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.log-in-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.log-in-section input {
+  height: 20px;
 }
 
 @media screen and (max-width: 700px) {

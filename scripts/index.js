@@ -1,4 +1,4 @@
-let selectedLink = document.getElementById("home-nav");
+const selectedLink = document.getElementById("home-nav");
 selectedLink.id = "selected";
 
 var windowWidth = window.innerWidth;
