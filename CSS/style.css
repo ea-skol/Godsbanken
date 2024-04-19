@@ -26,6 +26,7 @@ header {
   position: sticky;
   top: 0;
   height: 70px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.795);
 }
 
 /* #white-space {
@@ -194,8 +195,13 @@ section p {
 }
 
 section img {
-  height: 150px;
+  height: 180px;
   border-radius: 10px;
+}
+
+.log-in-section {
+  padding-top: 1px;
+  height: 500px;
 }
 
 #log-in-form {
@@ -208,12 +214,12 @@ section img {
   margin-right: auto;
   width: 280px;
   height: 400px;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 10px;
   border-radius: 10px;
 }
 
-.log-in-section {
+.log-in-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,18 +227,58 @@ section img {
   height: 110px;
 }
 
-.log-in-section input {
+.log-in-content input {
   height: 20px;
+}
+
+.input-text {
+  text-align: center;
+}
+
+#to-top {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: lightblue;
+  box-shadow: 0px 0px 5px 0px black;
+  border-radius: 7px;
+  text-decoration: none;
+  color: black;
+}
+
+#to-top p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 footer {
   width: 100%;
-  min-height: 300px;
-  margin-top: 50px;
+  min-height: 200px;
+  margin-top: 100px;
+  padding-top: 40px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media screen and (max-width: 700px) {
+footer img {
+  height: 50px;
+}
+
+.footer-links {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
   .p-img-order {
     flex-direction: column-reverse;
   }
@@ -257,5 +303,14 @@ footer {
   }
   header {
     display: none;
+  }
+  footer {
+    height: 240px;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
   }
 }
