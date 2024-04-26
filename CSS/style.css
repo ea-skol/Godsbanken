@@ -169,6 +169,17 @@ section {
   background-color: lightblue;
 }
 
+.section-data-hantering {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.div-data-hantering {
+  padding: 50px;
+  width: 60%;
+}
+
 h2 {
   padding-top: 30px;
   text-align: center;

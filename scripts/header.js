@@ -8,10 +8,10 @@ header.innerHTML = `
             <a class="header-link" id="home-nav" href="index.html">ДІМ</a>
         </li>
         <li>
-            <a class="header-link" id="loan-nav" href="#hola">LÅN</a>
+            <a class="header-link" id="loan-nav" href="loans.html">LÅN</a>
         </li>
         <li>
-            <a class="header-link" id="help-nav" href="#">HJÄLP</a>
+            <a class="header-link" id="help-nav" href="help.html">HJÄLP</a>
         </li>
     </ul>
     <a id="log-in-button" href="log-in.html">Logga in</a>
