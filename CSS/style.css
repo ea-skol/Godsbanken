@@ -126,10 +126,11 @@ nav {
 }
 
 #hero {
-  background-image: url(../images/hero2.png);
+  background-image: url(../images/hero-money.jpg);
   /* width: 98%; */
   margin: 10px auto;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center;
   height: 400px;
   display: flex;
@@ -295,6 +296,9 @@ footer img {
   }
   .img-p-order {
     flex-direction: column;
+  }
+  section {
+    padding-bottom: 150px;
   }
   .section-content {
     justify-content: center;
