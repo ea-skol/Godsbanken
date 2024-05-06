@@ -15,6 +15,10 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+::selection {
+  background-color: rgba(255, 255, 0, 0.57);
+}
+
 header {
   display: flex;
   align-items: center;
@@ -86,6 +90,7 @@ nav {
   display: block;
   text-align: center;
   border-bottom: 3px solid #00000000;
+  transition: all 0.1s ease-out;
   /* border-radius: 7px; */
 }
 
@@ -115,6 +120,7 @@ nav {
   text-align: center;
   background-color: rgb(196, 72, 72);
   border-radius: 7px;
+  transition: all 0.1s ease-out;
 }
 
 #log-in-button:hover {

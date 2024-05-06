@@ -5,7 +5,7 @@ header.innerHTML = `
 <nav>
     <ul id="nav-ul">
         <li>
-            <a class="header-link" id="home-nav" href="index.html">ДІМ</a>
+            <a class="header-link" id="home-nav" href="index.html">HEM</a>
         </li>
         <li>
             <a class="header-link" id="loan-nav" href="loans.html">LÅN</a>
