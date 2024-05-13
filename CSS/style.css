@@ -253,6 +253,17 @@ section img {
   text-align: center;
 }
 
+.search-div {
+  background-color: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#search-button {
+  margin-left: 20px;
+  padding: 0px 10px;
+}
+
 #to-top {
   width: 60px;
   height: 60px;
@@ -296,6 +307,10 @@ footer img {
   margin-top: 30px;
 }
 
+#hamburger-menu {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .p-img-order {
     flex-direction: column-reverse;
@@ -322,8 +337,30 @@ footer img {
   .right-align {
     text-align: center;
   }
-  header {
+  #hamburger-menu {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+  }
+  header:not(.head-viz) {
     display: none;
+  }
+  header.head-viz {
+    transition: all 0.3s ease-out;
+    display: block;
+    position: sticky;
+    flex-direction: column;
+    height: 100%;
+    top: 56px;
+  }
+  header.head-viz nav ul {
+    flex-direction: column;
+  }
+  #hero {
   }
   footer {
     height: 240px;

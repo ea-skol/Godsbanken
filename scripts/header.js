@@ -17,6 +17,22 @@ header.innerHTML = `
     <a id="log-in-button" href="log-in.html">Logga in</a>
 </nav>`;
 
+header.insertAdjacentHTML("beforebegin",'<div id="hamburger-menu">E</div>');
+
+const hamburger = document.getElementById("hamburger-menu");
+let classBool = 0;
+
+hamburger.onclick = () => {
+    classBool++;
+    classBool %= 2;
+    if (classBool == 0) {
+        header.className = "";
+    }
+    if (classBool == 1) {
+        header.className = "head-viz";
+    }
+}
+
 // const headerLinks = Array.from(document.getElementsByClassName('header-link'));
 // const logIn = document.getElementById("log-in-button");
 // var flag = false;
