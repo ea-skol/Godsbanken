@@ -24,7 +24,6 @@ header {
   align-items: center;
   justify-content: center;
   background-color: lightblue;
-  /* border-radius: 7px; */
   font-weight: 600;
   font-size: large;
   position: sticky;
@@ -32,13 +31,6 @@ header {
   height: 70px;
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.795);
 }
-
-/* #white-space {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  height: 10px;
-} */
 
 .header-section {
   display: flex;
@@ -59,7 +51,6 @@ ul {
 }
 
 nav {
-  /* border: 3px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,19 +61,14 @@ nav {
 #nav-ul {
   padding: 0;
   display: flex;
-  /* justify-content: space-between; */
-  /* border: 3px solid yellow; */
   width: 50%;
 }
 
 #nav-ul li {
   margin-right: 30px;
-  /* width: 50%; */
-  /* border: 3px solid black; */
 }
 
 .header-link {
-  /* background-color: rgb(198, 198, 198); */
   padding: 10px;
   width: 100px;
   text-decoration: none;
@@ -91,27 +77,22 @@ nav {
   text-align: center;
   border-bottom: 3px solid #00000000;
   transition: all 0.1s ease-out;
-  /* border-radius: 7px; */
 }
 
 .header-link:hover {
   background-color: #03074b1c;
-  /* border-bottom: 3px solid #00000000; */
 }
 
 .header-link.clicked {
   background-color: #03074b29;
-  /* border-bottom: 3px solid #00000000; */
 }
 
 #selected {
-  /* background-color: rgb(117, 117, 117); */
   border-bottom: 3px solid black;
 }
 
 #log-in-button {
   width: 70px;
-  /* border: 3px solid black; */
   margin-left: auto;
   margin-right: 10px;
   padding: 7px;
@@ -133,7 +114,6 @@ nav {
 
 #hero {
   background-image: url(../images/hero-money.jpg);
-  /* width: 98%; */
   margin: 10px auto;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -161,13 +141,9 @@ h1 {
 section {
   font-weight: 600;
   font-size: large;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* border: 3px solid black; */
   margin-top: 50px;
   margin-bottom: -50px;
   padding-bottom: 50px;
-  /* width: 100%; */
   background-color: white;
   height: 350px;
 }
@@ -197,13 +173,11 @@ h2 {
   margin-top: 40px;
   display: flex;
   justify-content: space-evenly;
-  /* border: 3px solid black; */
 }
 
 section p {
   width: 50%;
   text-wrap: pretty;
-  /* border: 3px solid gray; */
   display: flex;
   align-items: center;
 }
@@ -259,9 +233,60 @@ section img {
   padding: 10px;
 }
 
+.search-form {
+  display: flex;
+}
+
+.page-arrow {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-left: 5px;
+  transition: all 0.1s ease-out;
+}
+
+.page-arrow:hover {
+  background-color: rgb(224, 222, 222);
+}
+
+#page-number {
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
 #search-button {
   margin-left: 20px;
   padding: 0px 10px;
+}
+
+#movie-table-div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.movie-table {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.movie-table th {
+  border: 1px solid black;
+  margin: 0;
+}
+
+.movie-table td {
+  border: 1px solid black;
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+}
+
+.poster {
+  height: 100px;
 }
 
 #to-top {
@@ -311,6 +336,38 @@ footer img {
   display: none;
 }
 
+#contact-us-div {
+  padding: 20px;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#contact-us-form {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-us-form input {
+  margin-top: 5px;
+}
+
+#terms-of-service-label {
+  font-size: 13px;
+}
+
+#must-check {
+  font-size: 13px;
+  color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   .p-img-order {
     flex-direction: column-reverse;
@@ -337,14 +394,32 @@ footer img {
   .right-align {
     text-align: center;
   }
+  #hamb-menu-div {
+    position: sticky;
+    top: 0;
+    display: flex;
+  }
+  #hamb-background:not(.head-viz) {
+    display: none;
+  }
+  #hamb-background.head-viz {
+    background-color: lightblue;
+    border: 3px solid lightblue;
+    position: sticky;
+    width: 99%;
+  }
   #hamburger-menu {
     display: block;
     width: 50px;
     height: 50px;
-    border: 3px solid black;
+    border: 3px solid lightblue;
     cursor: pointer;
     position: sticky;
+    background-color: lightblue;
     top: 0;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
   }
   header:not(.head-viz) {
     display: none;
@@ -359,8 +434,6 @@ footer img {
   }
   header.head-viz nav ul {
     flex-direction: column;
-  }
-  #hero {
   }
   footer {
     height: 240px;

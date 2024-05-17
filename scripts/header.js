@@ -17,9 +17,10 @@ header.innerHTML = `
     <a id="log-in-button" href="log-in.html">Logga in</a>
 </nav>`;
 
-header.insertAdjacentHTML("beforebegin",'<div id="hamburger-menu">E</div>');
+header.insertAdjacentHTML("beforebegin",'<div id="hamb-menu-div"><div id="hamburger-menu">Ξ</div><div id="hamb-background"></div></div>');
 
 const hamburger = document.getElementById("hamburger-menu");
+const hambBack = document.getElementById("hamb-background");
 let classBool = 0;
 
 hamburger.onclick = () => {
@@ -27,42 +28,10 @@ hamburger.onclick = () => {
     classBool %= 2;
     if (classBool == 0) {
         header.className = "";
+        hambBack.className = "";
     }
     if (classBool == 1) {
         header.className = "head-viz";
+        hambBack.className = "head-viz";
     }
 }
-
-// const headerLinks = Array.from(document.getElementsByClassName('header-link'));
-// const logIn = document.getElementById("log-in-button");
-// var flag = false;
-
-// window.onmouseup = () => { flag = false; }
-
-// headerLinks.forEach(link => {
-//     link.onmouseover = () => {
-//         if(flag) {
-//             link.classList.add("clicked");
-//         }
-//     }
-//     link.onmousedown = () => {
-//         link.classList.add("clicked");
-//         flag = true;
-//     }
-//     link.onmouseup = () => {
-//         link.classList.remove("clicked");
-//     }
-// });
-
-// logIn.onmouseover = () => {
-//     if(flag) {
-//         logIn.classList.add("clicked");
-//     }
-// }
-// logIn.onmousedown = () => {
-//     logIn.classList.add("clicked");
-//     flag = true;
-// }
-// logIn.onmouseup = () => {
-//     logIn.classList.remove("clicked");
-// }

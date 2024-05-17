@@ -2,35 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Godsbanken</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
   </head>
   <body>
     <header></header>
-    <table style="text-align: center">
-      <tr>
-        <th>To do</th>
-      </tr>
-      <tr>
-        <td style="background-color: red">Table</td>
-      </tr>
-      <tr>
-        <td style="background-color: red">Different types of form inputs</td>
-      </tr>
-      <tr>
-        <td style="background-color: rgb(75, 245, 45)">Alt-attribute</td>
-      </tr>
-      <tr>
-        <td style="background-color: rgb(75, 245, 45)">CSS-animation</td>
-      </tr>
-      <tr>
-        <td style="background-color: red">API</td>
-      </tr>
-    </table>
+    <section>
+      <div id="contact-us-div">
+        <h3>Kontakta oss:</h3>
+        <form action="" id="contact-us-form">
+          <input
+            type="email"
+            name="help-email"
+            id="help-email"
+            placeholder="Din e-mail" />
+          <input
+            type="text"
+            name="help-matter"
+            id="help-matter"
+            placeholder="Ditt ärende" />
+          <div>
+            <label for="importance-0">Oviktigt</label>
+            <input type="radio" name="matter-importance" id="importance-0" />
+            <label for="importance-1">Lite viktigt</label>
+            <input type="radio" name="matter-importance" id="importance-1" />
+            <label for="importance-2">Viktigt</label>
+            <input type="radio" name="matter-importance" id="importance-2" />
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="terms-of-service"
+              id="terms-of-service" />
+            <label for="terms-of-service" id="terms-of-service-label"
+              >Jag har läst och accepterar bankens
+              <a href="personal-data.html" target="blank">terms of service</a>
+              och jag säger ifrån mig rätten till min själ.
+            </label>
+          </div>
+          <input type="submit" name="trash-submit" id="trash-submit" />
+        </form>
+      </div>
+    </section>
     <footer></footer>
   </body>
   <script src="scripts/header.js"></script>

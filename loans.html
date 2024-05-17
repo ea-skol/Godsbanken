@@ -5,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Godsbanken</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
   </head>
   <body>
     <header></header>
     <div class="search-div">
-      <form action="">
+      Oturligt nog så funkar inte våra lån just nu. Sök på en film istället!
+      <br></br>
+      <form action="" class="search-form">
         <input
           type="search"
           name="search-field"
           id="search-field"
-          placeholder="Sök" />
-        <label for="cheap-radio">Billigast först</label>
-        <input type="radio" name="price" id="cheap-radio" value="cheap" />
-        <label for="expensive-radio">Dyrast först</label>
-        <input
-          type="radio"
-          name="price"
-          id="expensive-radio"
-          group="price"
-          value="expensive" />
+          placeholder="Sök efter film" />
+        <div class="page-arrow" id="page-back">Förra sidan &lt;&nbsp;</div>
+        <p id="page-number">1/1</p>
+        <div class="page-arrow" id="page-forward">Nästa sida &gt;&nbsp;</div>
         <input type="submit" name="" id="search-button" value="Sök" />
       </form>
     </div>
+    <div id="results"></div>
     <footer></footer>
   </body>
   <script src="scripts/header.js"></script>
